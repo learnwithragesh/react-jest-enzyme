@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Alert Displays on Clicking Add 1`] = `
+<div>
+  <input
+    onChange={[Function]}
+    placeholder="Number 1"
+    style={
+      Object {
+        "margin": 10,
+      }
+    }
+    type="text"
+    value=""
+  />
+  <br />
+  <input
+    onChange={[Function]}
+    placeholder="Number 2"
+    style={
+      Object {
+        "margin": 10,
+      }
+    }
+    type="text"
+    value=""
+  />
+  <br />
+  <input
+    onClick={[Function]}
+    style={
+      Object {
+        "margin": 10,
+      }
+    }
+    type="button"
+    value="Add"
+  />
+  <input
+    onClick={[Function]}
+    style={
+      Object {
+        "margin": 10,
+      }
+    }
+    type="button"
+    value="Sub"
+  />
+  <input
+    onClick={[Function]}
+    style={
+      Object {
+        "margin": 10,
+      }
+    }
+    type="button"
+    value="Mul"
+  />
+  <input
+    onClick={[Function]}
+    style={
+      Object {
+        "margin": 10,
+      }
+    }
+    type="button"
+    value="Div"
+  />
+</div>
+`;
