@@ -12,6 +12,7 @@ export default function Calculator() {
 
     let [number1, setNumber1] = useState('');
     let [number2, setNumber2] = useState('');
+    let [output, setOutput] = useState('');
 
     return (
         <div>
@@ -22,13 +23,15 @@ export default function Calculator() {
                 value={number2} onChange={(e) => setNumber2(e.target.value)}/>
             <br />
             <input type="button" value="Add" style={style.margin}
-                onClick={(e) => alert(add(number1, number2))}/>
+                onClick={(e) => setOutput(add(number1, number2))}/>
             <input type="button" value="Sub" style={style.margin}
-                onClick={(e) => alert(subtract(number1, number2))}/>
+                onClick={(e) => setOutput(subtract(number1, number2))}/>
             <input type="button" value="Mul" style={style.margin}
-                onClick={(e) => alert(multiply(number1, number2))}/>
+                onClick={(e) => setOutput(multiply(number1, number2))}/>
             <input type="button" value="Div" style={style.margin}
-                onClick={(e) => alert(divide(number1, number2))}/>
+                onClick={(e) => setOutput(divide(number1, number2))}/>
+            <br />
+            <h3 style={style.margin}>{output}</h3>
         </div>
     );
 }
