@@ -16,10 +16,10 @@ export default function Calculator() {
 
     return (
         <div>
-            <input type="text" placeholder="Number 1" style={style.margin} 
+            <input className="test" type="text" placeholder="Number 1" style={style.margin} 
                 value={number1} onChange={(e) => setNumber1(e.target.value)}/>
             <br />
-            <input type="text" placeholder="Number 2" style={style.margin}
+            <input className="test" type="text" placeholder="Number 2" style={style.margin}
                 value={number2} onChange={(e) => setNumber2(e.target.value)}/>
             <br />
             <input type="button" value="Add" style={style.margin}

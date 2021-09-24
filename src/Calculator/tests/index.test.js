@@ -12,6 +12,7 @@ const calculator = shallow(
 test('Total 4 Buttons and 2 Inputs', () => {
     expect(calculator.find({ type: 'button' })).toHaveLength(4);
     expect(calculator.find({ type: 'text' })).toHaveLength(2);
+    expect(calculator.find('.test')).toHaveLength(2);
 });
 
 test('Simulate Input Values', () => {
